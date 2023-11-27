@@ -74,6 +74,9 @@
    <script src="../assets/theme_assets/js/leaflet-init.js"></script>
    <script src="../assets/vendor_assets/js/sweetalert211.js"></script>
    <script src="../assets/theme_assets/js/main.js"></script>
+
+   <!-- ADDED BY NICOLAY -->
+   <script src="../config/js/global.js"></script>
    <!-- endinject-->
 </body>
 

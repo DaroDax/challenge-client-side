@@ -4,60 +4,6 @@ include('./header.php');
 
 ?>
 
-<!-- MODALES DE LA PAGINA -->
-<div class="modal-basic modal fade show" id="modal-basic" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content modal-bg-white ">
-            <div class="modal-header">
-                <h6 class="modal-title">Detalles de la cuenta.</h6>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <img src="../img/svg/x.svg" alt="x" class="svg">
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div class="row">
-                    <div class=" col-lg-12">
-
-                        <div class="list-box">
-                            <ul>
-                                <li class="list-box__item">
-                                    <div class="d-flex align-items-center">
-                                        <i class="uil uil-user me-2"></i>
-                                        <h6 class="fw-light fs-6 me-2">MT5 ID:</h6>
-                                        <b class="fs-6">22555454</b>
-                                    </div>
-                                </li>
-                                <li class="list-box__item">
-                                    <div class="d-flex align-items-center">
-                                        <i class="uil uil-keyhole-circle me-2"></i>
-                                        <h6 class="fw-light fs-6 me-2">Clave:</h6>
-                                        <b class="fs-6">ejyk7yrl</b>
-                                    </div>
-                                </li>
-                                <li class="list-box__item">
-                                    <div class="d-flex align-items-center">
-                                        <i class="uil uil-database me-2"></i>
-                                        <h6 class="fw-light fs-6 me-2">Server:</h6>
-                                        <b class="fs-6">Deriv-Demo</b>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-info btn-sm" onclick="desafioAnadido();"> <i class="uil uil-window me-2"></i> MT5 WEB </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- MODALES DE LA PAGINA -->
-
 <div class="contents">
 
     <div class="crm mb-25">
@@ -82,17 +28,22 @@ include('./header.php');
 
                         <div class="card p-0">
 
-                            <div class="bg-info px-2 py-1 text-white rounded-top" style="min-height:0px !important;">
+                            <div class="bg-info px-3 py-2 text-white rounded-top" style="min-height:0px !important;">
                                 <div class="row align-items-baseline">
 
-                                    <div class="col-6">MT5 ID: 22555454</div>
+                                    <div class="col-12 d-flex align-items-baseline">
 
-                                    <div class="col-6 d-flex justify-content-end">
+                                        <div class="me-1">MT5 ID: <a href="javascript:;" class="text-white me-2" onclick="copiarAlPortapapeles(this.innerText)">22555454</a></div>
+                                        <div> | Clave: <a href="javascript:;" class="text-white" onclick="copiarAlPortapapeles(this.innerText)">********</a></div>
+
+                                    </div>
+
+                                    <!-- <div class="col-6 d-flex justify-content-end">
                                         <button data-bs-toggle="modal" data-bs-target="#modal-basic" href="javascript:;" class="text-white btn btn-icon btn-outline-light btn-small" title="Ver Credenciales">
                                             <i class="uil uil-lock-open-alt me-0"></i>
                                         </button>
 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -107,22 +58,22 @@ include('./header.php');
                                         <ul class="list-unstyled">
 
                                             <li class="py-4 px-2 border-bottom border-top">
-                                                <div class="d-flex align-items-center justify-content-end text-start"><span class="badge-dot dot-success me-2 "></span> Balance Inicial Del Día: <h5 class="fw-bold fs-5 ms-2">$25.000,00</h5>
+                                                <div class="d-flex align-items-center justify-content-between text-start"><div class="d-flex align-items-center"><span class="badge-dot dot-success me-2 "></span> Balance Inicial Del Día:</div> <h5 class="fw-bold fs-5 ms-2">$25.000,00</h5>
                                                 </div>
                                             </li>
 
                                             <li class="py-4 px-2 border-bottom border-top">
-                                                <div class="d-flex align-items-center justify-content-end text-start"><span class="badge-dot dot-danger me-2 "></span> Profit Del Día: <h5 class="fw-bold fs-5 ms-2">$22,54</h5>
+                                                <div class="d-flex align-items-center justify-content-between text-start"><div class="d-flex align-items-center"><span class="badge-dot dot-danger me-2 "></span> Profit Del Día:</div> <h5 class="fw-bold fs-5 ms-2">$22,54</h5>
                                                 </div>
                                             </li>
 
                                             <li class="py-4 px-2 border-bottom border-top">
-                                                <div class="d-flex align-items-center justify-content-end text-start"><span class="badge-dot dot-info me-2 "></span> Pérdida Disponible Del Día: <h5 class="fw-bold fs-5 ms-2">$1.250,00</h5>
+                                                <div class="d-flex align-items-center justify-content-between text-start"><div class="d-flex align-items-center"><span class="badge-dot dot-info me-2 "></span> Pérdida Disponible Del Día:</div> <h5 class="fw-bold fs-5 ms-2">$1.250,00</h5>
                                                 </div>
                                             </li>
 
                                             <li class="py-4 px-2 border-bottom border-top">
-                                                <div class="d-flex align-items-center justify-content-end text-start"><span class="badge-dot dot-success me-2 "></span> Balance Actual: <h5 class="fw-bold fs-5 ms-2">$25.022,54</h5>
+                                                <div class="d-flex align-items-center justify-content-between text-start"><div class="d-flex align-items-center"><span class="badge-dot dot-success me-2 "></span> Balance Actual:</div> <h5 class="fw-bold fs-5 ms-2">$25.022,54</h5>
                                                 </div>
                                             </li>
 
