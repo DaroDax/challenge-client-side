@@ -54,6 +54,10 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
 
+    <!-- DataTable -->
+    <!-- <link rel="stylesheet" href="../assets/vendor_assets/css/datatables.min.css"> -->
+    <link rel="stylesheet" href="../assets/vendor_assets/css/dataTables.bootstrap5.min.css">
+
 </head>
 
 <body class="layout-light side-menu">

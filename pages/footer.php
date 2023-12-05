@@ -77,6 +77,10 @@
 
    <!-- ADDED BY NICOLAY -->
    <script src="../config/js/global.js"></script>
+
+   <!-- DataTable -->
+   <script src="../assets/vendor_assets/js/datatables.min.js"></script>
+   <script src="../assets/vendor_assets/js/dataTables.bootstrap5.min.js"></script>
    <!-- endinject-->
 </body>
 

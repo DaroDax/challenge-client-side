@@ -407,4 +407,3 @@ function areaChart(idName, width, height = "270") {
         new ApexCharts(document.querySelector(idName), optionRadial).render();
     }
 }
-areaChart('.areaChartBasic', '100%', 267);

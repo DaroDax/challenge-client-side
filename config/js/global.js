@@ -1,3 +1,5 @@
+//Copiar al portapapeles.......
+
 function copiarAlPortapapeles(texto) {
     console.log(texto)
     // Crear un elemento de textarea temporal
